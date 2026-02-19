@@ -278,9 +278,6 @@ const App: React.FC = () => {
   }, [leads, categoryFilter, statusFilter]);
 
   // If not logged in → show login
-  if (!isAuthed) {
-    return <AuthBox onAuthed={() => setIsAuthed(true)} />;
-  }
 
   return (
     <div className="min-h-screen pb-20 bg-slate-50 flex flex-col">
