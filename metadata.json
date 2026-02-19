@@ -1,0 +1,7 @@
+{
+  "name": "Local Biz Finder",
+  "description": "Find local businesses, phone numbers, and reviews in any city using Gemini with Google Maps grounding.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
