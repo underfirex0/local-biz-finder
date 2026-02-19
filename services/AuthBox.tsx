@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "../services/supabaseClient";
 
-type Props = { onAuthed: () => void };
+type Props = {
+  onAuthed: () => void;
+};
 
 export const AuthBox: React.FC<Props> = ({ onAuthed }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [mode, setMode] = useState<"login" | "signup">("login");
-  const [msg, setMsg] = useState("");
+  const [msg, setMsg] = useState<string>("");
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data }) => {
