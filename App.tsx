@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { SearchForm } from "./components/SearchForm";
-import { AuthBox } from "./components/AuthBox";
 import {
   SearchParams,
   BusinessInfo,
